@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore SCEPT!C, an experimental music project blending ambient, wave, and underground hip-hop influences. Dive into unique soundscapes with immersive tracks and exclusive audio experiences.">
+
+    <title>SCEPT!C | My Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        p {
+            position: relative;
+            font-size: 24px;
+        }
+        img {position: relative;
+        border-radius: 10px;
+    height: 315px;}
+        
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .text-content {
+            position: relative;
+            width: 55%;
+            height: 315px;
+            padding: 20px;
+            font-size: 20px;
+            color: #fff;
+            background-color: rgba(36,60,92,0.5);
+            border-radius: 8px;
+
+        }
+
+     
+        .music-discs-container {
+        display: flex;
+        justify-content: center; 
+        align-items: flex-start; 
+        position: relative;
+        margin-top: 80px; 
+        padding-bottom: 200px; 
+        margin-left: 5%;
+      
+    }
+
+
+    .music-disc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        color: white;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .music-disc.disc1 {
+        background-image: url('final_images/music_disc_texture.jpg');
+        margin-right: 40px; 
+    }
+
+
+    .music-disc.disc2 {
+        background-image: url('final_images/music_disc_texture.jpg');
+    
+    }
+
+
+    .music-disc.disc3 {
+        background-image: url('final_images/music_disc_texture.jpg');
+        position: absolute; 
+        top: 205px; 
+        left: 26%; 
+        
+    }
+
+    .music-disc:hover {
+        transform: scale(1.1) rotate(10deg); 
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.8);
+    }
+
+    .music-disc:hover .disc-text {
+        transform: translateY(-10px); 
+    }
+
+
+    .music-disc .disc-text {
+        font-size: 20px;
+        font-family: 'Space Grotesk', sans-serif;
+        position: relative;
+    }
+
+
+       
+
+        iframe {
+            position: relative;
+            border-radius: 10px;
+            width: 40%;
+
+            border: none;
+        }
+
+        .parallax {
+            position: relative;
+            height: 500px;
+   
+            background-image: url("final_images/music_set.jpg");
+            background-size: cover;
+            
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            color: white;
+            box-shadow:   0px 0px 50px #112d86;
+
+            margin: auto
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div id="background"></div>
+
+    <header>
+        <h1>SCEPT!C</h1>
+        <nav>
+            <ul>
+                <li><a href="tp.html">Services</a></li>
+                <li><a href="my_projects.html" > Personal Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    
+        <div class="content-wrapper">
+            <div class="card-project">
+                
+                <p>SCEPT!C is an experimental music project by Roy that blends ambient, synthesizer-driven soundscapes with hypnotic rhythms and evolving textures. Drawing inspiration from Indian musical influences and artists like Øneheart, Clams Casino, Alaskan Tapes, and Aphex Twin, SCEPT!C merges ambient, wave, and experimental sounds to create immersive, cinematic experiences. The music combines deep synth pads, atmospheric layers, and organic tones, transporting listeners to other worlds.
+
+                    Each track evokes deep emotions, offering a mix of calm, introspection, and complex sonic landscapes. From soothing, ethereal sounds to mesmerizing beats, the music invites exploration of inner space. Perfect for relaxation, focus, or creative work, SCEPT!C provides a rich backdrop for meditation or deep listening. It offers a transformative experience, helping listeners disconnect from the chaos of everyday life.
+                    
+                    Whether for peace or sonic adventure, SCEPT!C provides an unforgettable journey through sound.</p>
+
+
+            </div>
+            <iframe  height="415" 
+            src="https://www.youtube.com/embed/yGubJ97qtBc" 
+            title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+    </iframe>
+        </div>
+
+ 
+        <div class="parallax"></div>
+
+
+        <div class="content-wrapper">
+        
+            <div class="music-discs-container">
+                
+                <div class="music-disc disc1">
+                    <div class="disc-text">i_need_you.mp3</div>
+                    <audio id="disc-audio-1" src="final_audio/kanye_type.wav" preload="auto"></audio>
+                </div>
+            
+                
+                <div class="music-disc disc2">
+                    <div class="disc-text">immortal.mp3</div>
+                    <audio id="disc-audio-2" src="final_audio/immortale_chopped.wav" preload="auto"></audio>
+                </div>
+            
+                
+                <div class="music-disc disc3">
+                    <div class="disc-text">dreams.mp3</div>
+                    <audio id="disc-audio-3" src="final_audio/dreams_chopped.wav" preload="auto"></audio>
+                </div>
+            </div>
+            
+      
+            <div class="card-project">
+                <p>SCEPT!C’s sound also includes gritty, underground hip-hop, drawing heavy inspiration from producers like Wondagurl, Kenny Beats, Decap, and JPEGMAFIA. The beats are raw and energetic, built with swing-heavy rhythms that make your head nod. SCEPT!C blends ethnic samples with innovative chops, creating unique, textured sounds that are both hard-hitting and smooth. The focus is on exceptional sampling, with tracks that incorporate bold, unconventional elements alongside the raw vibe of underground hip-hop. It’s a fusion of head-bopping rhythms, sharp percussion, and layered sounds designed to keep you engaged, vibing, and thinking. Expect hip-hop beats that push the boundaries of traditional sound, with a style that’s as dynamic as it is distinct.</p>
+                <br>
+
+                <p style="font-size: 28px; text-decoration: underline;"><strong>Hover over the disks on the left to listen!</strong></p>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>Contact: <a href="mailto:sceptic.wav@gmail.com">sceptic.wav@gmail.com</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.topology.min.js"></script>
+    <script>
+
+        VANTA.TOPOLOGY({
+            el: "#background",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: true,
+            backgroundColor: 0xA3B8D1,
+            color: 0xB3CAE6,
+            amplitudeFactor: 0.5,
+            maxDistance: 10,
+            points: 10,
+        });
+
+
+        $(window).on("scroll", function () {
+            let scrollPos = $(window).scrollTop();
+            $(".parallax").css("background-position", "center " + scrollPos * -0.5 + "px");
+        });
+    </script>
+
+<script>
+   
+    const musicDiscs = document.querySelectorAll('.music-disc'); 
+    const audios = [
+    document.getElementById('disc-audio-1'),
+    document.getElementById('disc-audio-2'),
+    document.getElementById('disc-audio-3')]
+    
+    musicDiscs.forEach((disc, index) => {
+        const audio = audios[index]; 
+        
+        disc.addEventListener('mouseenter', function() {
+            audio.play(); 
+        });
+
+        
+        disc.addEventListener('mouseleave', function() {
+            audio.pause(); 
+            audio.currentTime = 0; 
+        });
+    });
+</script>
+</body>
+</html>

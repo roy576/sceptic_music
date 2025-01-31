@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore SCEPT!C's dynamic music production portfolio." />
+  <title>SCEPT!C | Music Production Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Press+Start+2P&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="background"></div>
+  <header>
+    <h1>SCEPT!C</h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="tp.html">Services</a></li>
+        <li><a href="my_projects.html">Personal Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>My Services</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="final_images/music_productionnn.jpg" alt="Music Production" />
+          <p><strong>Music Production</strong></p>
+        </div>
+        <div class="card">
+          <img src="final_images/sound_engineering.jpeg" alt="Sound Engineering" />
+          <p><strong>Sound Engineering</strong></p>
+        </div>
+        <div class="card">
+          <img src="final_images/bg_SCORING.jpg" alt="Background Scoring" />
+          <p><strong>Background Scoring</strong></p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Testimonials</h2>
+      <div class="testimonials">
+        <div class="testimonial-card">
+          <img src="final_images/sai_final.jpeg" alt="Filmmaker" />
+          <p>He created several background compositions for my videos. They helped in emphasizing the emotions and giving life to the video.</p>
+          <hr />
+          <p><strong>- Sai, <em>Instagram content-creator</em></strong></p>
+        </div>
+        <div class="testimonial-card">
+          <img src="final_images/akurate_final.jpeg" alt="Hip-Hop Artist" />
+          <p>I've been working with him for years now and he's is the executive producer and engineer for my new album for a reason. He really understands what you need and goes the extra mile to help you achieve it.</p>
+          <hr />
+          <p><strong>- AKurate, <em>Hip-Hop Artist</em></strong></p>
+        </div>
+        <div class="testimonial-card">
+          <img src="final_images/rj_harsh.jpeg" alt="Multimedia Artist" />
+          <p>As an intern, he really supported me and brought a newer creative vision. He helped me design the bumper for my radio-segment</p>
+          <hr />
+          <p><strong>- Harsh, <em>Radio Jockey</em></strong></p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Pricing</h2>
+      <div class="pricing-box">
+        <div class="pricing-option">
+          <h3>Basic Package</h3>
+          <p class="price">$100</p>
+          <p>MP3+WAV file</p>
+          <p>2-3 revisions</p>
+          <p>Tagged beat; Credit necessary</p>
+          <br>
+          <a href="mailto:sceptic.wav@gmail.com"><button>Get in Touch</button></a>
+        </div>
+        <div class="pricing-option">
+          <h3>Standard Package</h3>
+          <p class="price">$200</p>
+          <p>MP3+WAV file</p>
+          <p>3-5 revisions</p>
+          <p>Untagged; Credit necessary</p>
+          <br>
+          <a href="mailto:sceptic.wav@gmail.com"><button>Get in Touch</button></a>
+        </div>
+        <div class="pricing-option">
+          <h3>Premium Package</h3>
+          <p class="price">$500</p>
+          <p>MP3+WAV file</p>
+          <p>Unlimited revisions</p>
+          <p>Untagged; Royalty Free</p>
+          <br>
+          <a href="mailto:sceptic.wav@gmail.com"><button>Get in Touch</button></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Contact: <a href="mailto:sceptic.wav@gmail.com">sceptic.wav@gmail.com</a></p>
+  </footer>
+  
+  <!-- Vanta Topology Background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.topology.min.js"></script>
+  <script>
+    VANTA.TOPOLOGY({
+      el: "#background",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: true,
+      backgroundColor: 0xA3B8D1,
+      color: 0xB3CAE6,
+      amplitudeFactor: 0.5,
+      maxDistance: 10,
+      points: 10,
+    });
+  </script>
+</body>
+</html>
